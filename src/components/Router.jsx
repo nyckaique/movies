@@ -10,10 +10,10 @@ export default function Router() {
     <div>
       <HashRouter>
         <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="/popular" element={<Popular />} />
-          <Route path="/toprated" element={<Toprated />} />
-          <Route path="/upcoming" element={<Upcoming />} />
+          <Route path="/movies" element={<Home />} />
+          <Route path="/movies/popular" element={<Popular />} />
+          <Route path="/movies/toprated" element={<Toprated />} />
+          <Route path="/movies/upcoming" element={<Upcoming />} />
         </Routes>
       </HashRouter>
     </div>
