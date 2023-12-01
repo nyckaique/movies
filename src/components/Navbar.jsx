@@ -18,12 +18,7 @@ import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["HOME", "EM BREVE", "POPULAR", "MELHORES AVALIADOS"];
-const navItemsPath = [
-  "/movies",
-  "/movies/upcoming",
-  "/movies/popular",
-  "/movies/toprated",
-];
+const navItemsPath = ["", "/upcoming", "/popular", "/toprated"];
 
 function DrawerAppBar(props) {
   const { window } = props;
