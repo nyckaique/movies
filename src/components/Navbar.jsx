@@ -14,10 +14,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MovieFilterIcon from "@mui/icons-material/MovieFilter";
+import Link from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["HOME", "EM BREVE", "POPULAR", "MELHORES AVALIADOS"];
-const navItemsPath = ["/", "upcoming", "popular", "toprated"];
+const navItemsPath = [
+  "/movies",
+  "/movies/upcoming",
+  "/movies/popular",
+  "/movies/toprated",
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -39,12 +45,12 @@ function DrawerAppBar(props) {
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText
                 primary={
-                  <a
-                    href={navItemsPath[index]}
+                  <Link
+                    to={navItemsPath[index]}
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
                     {item}
-                  </a>
+                  </Link>
                 }
               />
             </ListItemButton>
@@ -102,12 +108,12 @@ function DrawerAppBar(props) {
                 key={item}
                 sx={{ color: "#fff", fontSize: { sm: ".7em", md: "1em" } }}
               >
-                <a
-                  href={navItemsPath[index]}
+                <Link
+                  to={navItemsPath[index]}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   {item}
-                </a>
+                </Link>
               </Button>
             ))}
           </Box>
