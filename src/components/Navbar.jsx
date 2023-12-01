@@ -14,7 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MovieFilterIcon from "@mui/icons-material/MovieFilter";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["HOME", "EM BREVE", "POPULAR", "MELHORES AVALIADOS"];
