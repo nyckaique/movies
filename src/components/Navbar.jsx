@@ -83,7 +83,7 @@ function DrawerAppBar(props) {
             variant="h6"
             component="div"
             sx={{
-              display: { xs: "none", sm: "flex" },
+              display: "flex",
               flexGrow: "1",
               alignItems: "center",
               justifyContent: "center",
